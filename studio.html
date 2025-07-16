@@ -10,6 +10,11 @@
 		<style>
 			.colour {background-color: hsla(47, 85%, 45%, 0.6);}
 			body   {background-image: url("backgrounds/studio.png");}
+			
+			.flex-container { display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: center; align-items: flex-start; column-gap: 0px; }
+			.flex-item-left { order: 3; flex-grow: 0; width: 200px; flex-basis: auto;}
+			.flex-item-center { order: 3; flex-grow: 5; flex-basis: auto;}
+			.flex-item-right { order: 3; flex-grow: 0; width: 200px; flex-basis: auto;}
 		</style>
 
     </head>
@@ -20,10 +25,10 @@
 		</header>
 		
 		<!-- overall container for the site, hold the three divs to the left, center and right-->
-		<div class="container">
+		<div class="flex-container">
 		
 			<!--left sidebar-->
-			<div class="leftbar common colour">
+			<div class="flex-item-left common colour">
 				<table>
 					<tr>
 						<td><img src="icons/painting.ico"></td>
@@ -47,7 +52,7 @@
 					</tr>
 					<tr>
 						<td><img src="icons/studio.ico"></td>
-						<td><a href="test.html">Studio</a></td>
+						<td><a href="studio.html">Studio</a></td>
 					</tr>
 					<tr>
 						<td><img src="icons/magic.ico"></td>
@@ -65,15 +70,13 @@
 			</div>
 
 			<!--main page content goes in here-->
-			<div class="common colour content">
-<!-- 				<div class=""> -->
-					<audio controls>
-						<source src="audio/goblinlord.mp3" type="audio/mpeg">
-							Your browser does not support the audio element.
-					</audio>			
-<!-- 				</div> -->
+			<div class="flex-item-center common colour">
+				<audio controls style="width: 100%;">
+					<source src="audio/goblinlord.mp3" type="audio/mpeg">
+						Your browser does not support the audio element.
+				</audio>
 				
-				<p style="font-size: em;font-family: 'Courier New', monospace; text-align:center"><br>⠀⠀⠀⠀
+								<p style="font-size: 0.5em;font-family: 'Courier New', monospace; text-align:center"><br>⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣧⡿⡡⢣⠀⠀⠀⠀⣠⢰⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀<br>
 ⠀⠀⠀⠀⠀⢀⣠⠤⠶⠦⠤⠴⠤⢤⣀⣀⡤⣶⠒⠒⢦⣄⡀⠀⠸⡾⢧⣱⣾⠀⠀⠀⠀⣫⢮⡿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀<br>
 ⠀⠀⠀⠀⢠⢞⣡⢤⣤⢤⣄⡀⠂⠀⣉⣉⠀⢼⢦⡀⠠⢌⠉⠑⠒⠹⣌⣟⡵⣧⣀⡀⣼⣿⣇⢧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀<br>
@@ -157,11 +160,10 @@ C/D-|--------7---5-----7---5---5-----2~--------7---5-----8~-8-8-8-10~-10-10-10-1
 G/A-|--------8---7-----8---7---3-----3~--------8---7-----8~-8-8-8-10~-10-10-10-12\-<br>
 C/D-|----0-0---0---0-0---0---0---0-0-------0-0---0---0-0-8~-8-8-8-10~-10-10-10-12\-<br>
 				</p>
-				
 			</div>
 
 			<!--right sidebar-->
-			<div class="rightbar common colour">
+			<div class="flex-item-right common colour">
 				<p>Here is a list of ordered items:</p>    
 				<ol style="list-style-type: i">
 					<li>First item</li>

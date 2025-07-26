@@ -26,7 +26,7 @@
 }
 
 .content {
-	width: auto;
+	width: 100%;
 	float: left;
 }
 
@@ -63,4 +63,33 @@ td {
 
 table {
 	width: 100%;
+}
+
+.flex-container { 
+	display: flex; 
+	flex-direction: row; 
+	flex-wrap: nowrap; 
+	justify-content: center; 
+	align-items: flex-start; 
+	column-gap: 0px; 
+}
+			
+.flex-item-left { 
+	order: 3; 
+	flex-grow: 0; 
+	width: 200px; 
+	flex-basis: auto;
+}
+	
+.flex-item-center { 
+	order: 3; 
+	flex-grow: 5; 
+	flex-basis: auto;
+}
+
+.flex-item-right { 
+	order: 3; 
+	flex-grow: 0; 
+	width: 200px; 
+	flex-basis: auto;
 }

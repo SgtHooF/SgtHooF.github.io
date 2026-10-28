@@ -13,6 +13,19 @@
 	margin: 5px;
 	border-radius: 5px;
 	padding: 8px;
+	height: 154px;
+}
+
+.entryText {
+	width: 590px;
+
+}
+
+.entryThumbnail img {
+	width:150px;
+	height:150px;
+	border: 2px solid rgb(132, 129, 111); 
+	outline-style: ridge;
 }
 
 .page {
